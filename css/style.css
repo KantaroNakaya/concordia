@@ -94,12 +94,6 @@ body.appear #container{
 }
 }
 
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-
 
 /* ここからヘッダー部分　*/
 
@@ -189,16 +183,7 @@ h1{
 #g-nav{
     display: none;
 }
-
-
 /* ここまでヘッダー部分　*/
-
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-
 /* ここからメイン部分　*/
 
 .mainbox{
@@ -218,27 +203,7 @@ h1{
     padding: 24px 0;
 }
 
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/*　conceptBoxクラス　*/
-.charmBox{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-}
-.charm{
-    display: block;
-    width: 50%;
-    padding: 2.5%;
-}
-.charm img{
-    width: 100%;
-}
-.charm p{
-    padding: 8px;
-    max-width: 540px;
-    margin: 0 auto;
-}
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
 /*　newsBoxクラス　*/
 .newsBox{
     display: block;
@@ -285,98 +250,6 @@ h1{
     padding-right: 1vw;
 }
 
-
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-/* roomBoxクラス　*/
-/* moriningBoxクラス　*/
-.photoBox{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.roomBox p, .morningBox p{
-    width: 80%;
-    max-width: 810px;
-    margin: 8px auto;
-    
-}
-
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-    margin:0 auto;
-}
-
-.slider img {
-    width:100%;
-    height:auto;
-    border: 1px solid rgba(184,217,115,0.1);
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-/*
-.slider .slick-slide {
-    margin:0 10px;
-}
-*/
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    outline: none;
-    height: 50px;
-    width: 50px;
-/*     background-color: aquamarine;*/
-    text-align: center;
-    padding:16px;
-    z-index: 2;
-    transform: translateY(-50px);
-}
-
-
-.slick-prev {
-    left: -32px;
-}
-
-.slick-next {
-    right: -32px;
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-    margin:20px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-    margin:0 5px;
-}
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-}
 /* ここまでメイン部分　*/
 
 /* フッター部分 */
@@ -508,8 +381,6 @@ h1{
         display: flex;
         background-color: rgba(136,166,73,0.5);
     }
-
-
     .headerLogo{
         position: absolute;
         top: 0%;
@@ -657,20 +528,6 @@ h1{
     .snsBox, .reserveBox{
         width: 100%;
     }
-
-    .photoBox{
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-    }
-    .photo{
-        width: 50%;
-        padding: 2.5%;
-    }
-    .photo img{
-        width: 100%;
-    }
-
 }
 
 /* 幅768pxの画面時 */
@@ -683,27 +540,6 @@ h1{
     }
     .mini-firstView h1{
         font-size: 36px;
-    }
-    .charmBox{
-        width: 80%;
-        margin: 0 auto;
-        display: block;
-    }
-    .charm{
-        width: 100%;
-    }
-
-    .photoBox{
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-    }
-    .photo{
-        width: 100%;
-        padding: 2.5%;
-    }
-    .photo img{
-        width: 100%;
     }
 }
 @media screen and (max-width: 426px) {

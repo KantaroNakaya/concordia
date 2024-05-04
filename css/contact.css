@@ -12,7 +12,6 @@
   }
 }
 .Form-Item {
-
   padding-top: 24px;
   padding-bottom: 24px;
   width: 100%;
@@ -60,8 +59,8 @@
   width: 48px;
   display: inline-block;
   text-align: center;
-  background: rgba(89,74,60,0.5);
-  color:#F2F2F2;
+  background: rgba(89, 74, 60, 0.5);
+  color: #f2f2f2;
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
@@ -83,7 +82,7 @@
   flex: 1;
   width: 100%;
   max-width: 410px;
-  background:rgba(140,126,114,0.1);
+  background: rgba(140, 126, 114, 0.1);
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
@@ -105,7 +104,7 @@
   flex: 1;
   width: 100%;
   max-width: 410px;
-  background:rgba(140,126,114,0.1);
+  background: rgba(140, 126, 114, 0.1);
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
@@ -118,26 +117,23 @@
   }
 }
 .Form-Btn {
-  border-radius: 0px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
   display: block;
+  width: 280px;
+  border-radius: 0px;
+  margin: 32px auto 0;
+  padding: 20px 0;
   letter-spacing: 0.05em;
-  background: rgba(89,74,60,0.5);
+  background: rgba(89, 74, 60, 0.5);
   color: #fff;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  cursor: not-allowed;
 }
 @media screen and (max-width: 768px) {
   .Form-Btn {
     margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     width: 160px;
     font-size: 16px;
   }
@@ -147,6 +143,11 @@
   text-align: center;
   margin-bottom: 32px;
   font-family: "Noto Sans JP", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .demo-note {
+    text-align: left;
+  }
 }
 .demo-note .demo-note-text {
   font-size: 16px;

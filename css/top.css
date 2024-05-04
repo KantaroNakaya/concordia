@@ -35,10 +35,9 @@
 }
 .swiper-container {
   position: relative;
-  margin: 0 auto 32px;
-}
-.swiper {
+  width: 100%;
   max-width: 500px;
+  margin: 0 auto 32px;
 }
 .swiper-slide img {
   height: auto;

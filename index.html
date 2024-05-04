@@ -17,9 +17,9 @@
     <link rel="icon" href="favicon/favicon.ico" id="favicon">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
 
-    <!-- slickのcssリンク -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    
+    <!-- swiper.jsのcdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- 自作のcssリンク -->
     <link href="css/destyle.css" rel="stylesheet" type="text/css">
     <link href="css/base.css" rel="stylesheet" type="text/css">
@@ -134,15 +134,23 @@
     <!-- ここからroomBoxクラス  -->
     <div class="box roomBox" id="reserve">
         <h3 class="title">ROOM</h3>
-        <div class="photoBox"> 
-            <ul class="slider">
-                <li><img src="img/room/room01.jpg" alt="room-photo" loading="lazy"></li>
-                <li><img src="img/room/room03.jpg" alt="room-photo" loading="lazy"></li>
-                <li><img src="img/room/room06.jpg" alt="room-photo" loading="lazy"></li>
-                <li><img src="img/room/room08.jpg" alt="room-photo" loading="lazy"></li>
-                <li><img src="img/room/room07.jpg" alt="room-photo" loading="lazy"></li>
-                <li><img src="img/room/room05.jpg" alt="room-photo" loading="lazy"></li>
-            </ul> 
+        <div class="photoBox">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/room/room01.jpg" alt="room-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/room/room03.jpg" alt="room-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/room/room06.jpg" alt="room-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/room/room08.jpg" alt="room-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/room/room07.jpg" alt="room-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/room/room05.jpg" alt="room-photo" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="swiper-button-prev swiper-arrow-button swiper-button-prev01"></div>
+                <div class="swiper-button-next swiper-arrow-button swiper-button-next01"></div>
+            </div>
             <p>部屋は日差しの入る間取りとなっており、大阪中心地に居ながら自然な気持ちで快適に過ごすことができます。</p>
 
         </div>
@@ -151,13 +159,21 @@
     <!-- ここからmorningBoxクラス  -->
     <div class="box morningBox" id="morning">
         <h3 class="title">MORNING</h3>
-        <div class="photoBox">  
-            <ul class="slider">
-                <li><img src="img/morning/bread.jpg" alt="morning-photo" loading="lazy"></li>
-                <li><img src="img/morning/breakfast_dish.jpg" alt="morning-photo" loading="lazy"></li>
-                <li><img src="img/morning/fruit.jpg" alt="morning-photo" loading="lazy"></li>
-                <li><img src="img/hotel_morning_space.jpg" alt="morning-photo" loading="lazy"></li>
-            </ul>  
+        <div class="photoBox"> 
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper swiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/morning/bread.jpg" alt="morning-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/morning/breakfast_dish.jpg" alt="morning-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/morning/fruit.jpg" alt="morning-photo" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="img/hotel_morning_space.jpg" alt="morning-photo" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="swiper-button-prev swiper-arrow-button swiper-button-prev02"></div>
+                <div class="swiper-button-next swiper-arrow-button swiper-button-next02"></div>
+            </div>            
             <p>CONCORDIAのモーニングではパンとフルーツが特に人気です。パンに関しては一流の職人と最先端の機械が協業することで「一級品のパン」を提供させていただいております。</p>
         </div>
     </div>
@@ -218,11 +234,12 @@
     <!-- ProgressBar.jsのスクリプト -->
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
     
-    <!-- slickのスクリプト -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+    <!-- swiper.jsのcdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+
     <!-- 自作js -->
     <script src="js/script.js"></script>
+    <script src="js/top.js"></script>
     
     <!-- fontawesomeのスクリプト -->
     <script src="https://kit.fontawesome.com/d21f62b8c0.js" crossorigin="anonymous"></script>

@@ -1,4 +1,3 @@
-
 //=====画面読込時のjquery
 $(window).on('load',function(){
 $("#splash-logo").delay(0).fadeOut('slow');
@@ -13,12 +12,6 @@ $('body').addClass('appear');//フェードアウト後bodyにappearクラス付
 
 });
 
-//====================================
-//====================================
-//====================================
-//====================================
-//====================================
-
 
 //=====ハンバーガーメニューのjquery
 $(".openbtn").click(function () {//ボタンがクリックされたら
@@ -30,40 +23,3 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
-
-//====================================
-//====================================
-//====================================
-//====================================
-//====================================
-
-//=====slickを使ったスライダー
-
-$('.slider').slick({
-    autoplay: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: '<div class="slick-prev"><i class="fa-solid fa-angle-left"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa-solid fa-angle-right"></i></div>',
-    dots: true,//下部ドットナビゲーションの表示
-    responsive: [
-        {
-        breakpoint: 1080,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-        }
-    },
-    {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        }
-    }
-]
-});
-
-
-

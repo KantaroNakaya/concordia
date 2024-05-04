@@ -9,26 +9,26 @@ html {
     "ＭＳ 明朝", serif;
   font-size: 24px;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-.pc{
-    display: block;
+.pc {
+  display: block;
 }
-.sp{
-    display: none;
+.sp {
+  display: none;
 }
 @media screen and (max-width: 768px) {
-    .pc{
-        display: none;
-    }
-    .sp{
-        display: block;
-    }
-}
-.t-center{
+  .pc {
+    display: none;
+  }
+  .sp {
     display: block;
-    text-align: center;
+  }
+}
+.t-center {
+  display: block;
+  text-align: center;
 }
 
 /*========= ローディング画面のためのCSS ===============*/

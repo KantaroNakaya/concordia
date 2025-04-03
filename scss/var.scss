@@ -1,0 +1,13 @@
+//map型(key: value)でブレークポイントを定義する。
+$breakpoints: (
+  "pc_medium": "screen and (min-width: 1440px)",
+  "pc_small": "screen and (max-width: 1080px)",
+  "tablet": "screen and (max-width: 768px)",
+  "sp": "screen and (max-width: 426px)",
+);
+
+@mixin breakPoint($key) {
+  @media #{map-get($breakpoints, $key)} {
+    @content;
+  }
+}

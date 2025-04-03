@@ -11,6 +11,7 @@
     min-width: 320px;
   }
 }
+
 .Form-Item {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -27,6 +28,7 @@
     flex-wrap: wrap;
   }
 }
+
 .Form-Item-Label {
   width: 100%;
   max-width: 248px;
@@ -42,6 +44,7 @@
     font-size: 15px;
   }
 }
+
 .Form-Item-Label.isMsg {
   margin-top: 8px;
   margin-bottom: auto;
@@ -51,6 +54,7 @@
     margin-top: 0;
   }
 }
+
 .Form-Item-Label-Required {
   border-radius: 0px;
   margin-right: 8px;
@@ -65,13 +69,13 @@
 }
 @media screen and (max-width: 768px) {
   .Form-Item-Label-Required {
-    border-radius: 0px;
     padding-top: 4px;
     padding-bottom: 4px;
     width: 32px;
     font-size: 10px;
   }
 }
+
 .Form-Item-Input {
   border: 1px solid #ddd;
   border-radius: 0px;
@@ -94,6 +98,7 @@
     font-size: 15px;
   }
 }
+
 .Form-Item-Textarea {
   border: 1px solid #ddd;
   border-radius: 0px;
@@ -116,6 +121,7 @@
     font-size: 15px;
   }
 }
+
 .Form-Btn {
   display: block;
   width: 280px;
@@ -149,6 +155,7 @@
     text-align: left;
   }
 }
+
 .demo-note .demo-note-text {
   font-size: 16px;
   line-height: 18px;

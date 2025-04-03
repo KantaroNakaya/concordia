@@ -1,0 +1,99 @@
+@use "var";
+
+.charmBox {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    @include var.breakPoint("tablet") {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.charm {
+    display: block;
+    width: 50%;
+    padding: 2.5%;
+
+    @include var.breakPoint("tablet") {
+        width: 100%;
+    }
+}
+
+.charm img {
+    width: 100%;
+}
+
+.charm p {
+    padding: 8px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.photoBox {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include var.breakPoint("pc_small") {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+    }
+    @include var.breakPoint("tablet") {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.photoBox_text {
+    width: 80%;
+    max-width: 810px;
+    margin: 8px auto;
+    @include var.breakPoint("tablet") {
+        width: 100%;
+    }
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 32px;
+}
+
+.swiper-slide img {
+    height: auto;
+    width: 100%;
+}
+
+.swiper-arrow-button::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+}
+
+.swiper-button-prev {
+    left: -33px;
+}
+
+.swiper-button-next {
+    right: -33px;
+}
+
+.swiper-button-prev::after {
+    border-right: 20px solid #333;
+    border-left: 0;
+}
+
+.swiper-button-next::after {
+    border-left: 20px solid #333;
+    border-right: 0;
+}

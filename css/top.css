@@ -3,14 +3,29 @@
   margin: 0 auto;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .charmBox {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .charm {
   display: block;
   width: 50%;
   padding: 2.5%;
 }
+@media screen and (max-width: 768px) {
+  .charm {
+    width: 100%;
+  }
+}
+
 .charm img {
   width: 100%;
 }
+
 .charm p {
   padding: 8px;
   max-width: 540px;
@@ -24,21 +39,44 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.photoBox_text{
+@media screen and (max-width: 1080px) {
+  .photoBox {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photoBox {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.photoBox_text {
   width: 80%;
   max-width: 810px;
   margin: 8px auto;
 }
+@media screen and (max-width: 768px) {
+  .photoBox_text {
+    width: 100%;
+  }
+}
+
 .swiper-container {
   position: relative;
   width: 100%;
   max-width: 500px;
   margin: 0 auto 32px;
 }
+
 .swiper-slide img {
   height: auto;
   width: 100%;
 }
+
 .swiper-arrow-button::after {
   content: "";
   width: 0;
@@ -47,12 +85,15 @@
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
 }
+
 .swiper-button-prev {
   left: -33px;
 }
+
 .swiper-button-next {
   right: -33px;
 }
+
 .swiper-button-prev::after {
   border-right: 20px solid #333;
   border-left: 0;
@@ -61,46 +102,4 @@
 .swiper-button-next::after {
   border-left: 20px solid #333;
   border-right: 0;
-}
-@media screen and (max-width: 1080px) {
-  .photoBox {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-  }
-    .photoBox_text{
-        width: 100%;
-    }
-  .photo {
-    width: 50%;
-    padding: 2.5%;
-  }
-  .photo img {
-    width: 100%;
-  }
-}
-
-/* 幅768pxの画面時 */
-@media screen and (max-width: 768px) {
-  .charmBox {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-  .charm {
-    width: 100%;
-  }
-
-  .photoBox {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-  }
-  .photo {
-    width: 100%;
-    padding: 2.5%;
-  }
-  .photo img {
-    width: 100%;
-  }
 }

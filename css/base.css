@@ -1,127 +1,70 @@
-body,
-html {
+@charset "UTF-8";
+/*-------------------------
+htmlセレクタに対して
+-------------------------*/
+body {
   width: 100%;
   height: 100%;
   color: #594a3c;
   background-color: #f2f2f2;
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 24px;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 426px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 img {
   width: 100%;
 }
+
+/*-------------------------
+共通クラスに対して
+-------------------------*/
 .pc {
   display: block;
-}
-.sp {
-  display: none;
 }
 @media screen and (max-width: 768px) {
   .pc {
     display: none;
   }
+}
+
+.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
   .sp {
     display: block;
   }
 }
+
 .t-center {
   display: block;
   text-align: center;
 }
 
-
-/* ここからヘッダー部分　*/
-
-.firstView {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/first-view-pc.jpg);
-  background-position: center top;
-  position: relative;
-}
-
-.mini-firstView {
-  width: 100vw;
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/first-view-pc.jpg);
-  background-position: center top;
-  position: relative;
-}
-
-.site-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-45%, -40%);
-  font-family: "Libre Baskerville", serif;
-  font-size: 64px;
-  color: #f2f2f2;
-  text-shadow: 5px 5px 1px #594a3c;
-}
-.mini-firstView .site-title {
-  font-size: 56px;
-}
-
-.headerBox {
-  z-index: 2;
-  width: 100vw;
-  height: 80px;
-  display: flex;
-  background-color: rgba(136, 166, 73, 0.5);
-  position: fixed;
-  border-bottom: 1px solid rgba(136, 166, 73, 0.8);
-}
-
-.headerLogo {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  padding: 0% 3%;
-  text-align: center;
-  line-height: 80px;
-}
-.headerLogo a {
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  color: #f2f2f2;
-  text-shadow: 3px 3px 1px #594a3c;
-}
-
-.pcMenu {
-  width: 30%;
-  position: absolute;
-  top: 0%;
-  right: 3%;
-  text-align: center;
-}
-.pcMenu ul {
-  display: flex;
-}
-.pcMenu ul li {
-  width: 25%;
-  line-height: 80px;
-  color: #f2f2f2;
-  text-shadow: 3px 3px 1px #594a3c;
-  font-size: 20px;
-}
-.openbtn {
-  display: none;
-}
-#g-nav {
-  display: none;
-}
-/* ここまでヘッダー部分　*/
-/* ここからメイン部分　*/
-
 .mainbox {
   width: 100vw;
 }
+
 .box {
   padding: 64px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -136,15 +79,16 @@ img {
   padding: 24px 0;
 }
 
-/*　newsBoxクラス　*/
 .newsBox {
   display: block;
   width: 100vw;
 }
+
 .articleBox {
   width: 80%;
   margin: 32px auto;
 }
+
 .article {
   width: 100%;
   max-width: 840px;
@@ -152,19 +96,19 @@ img {
   display: flex;
   border-bottom: 1px solid #8c7e72;
 }
-.article:nth-child(1) {
+.article:first-child {
   border-top: 1px solid #8c7e72;
 }
-.article_date {
+.article .article_date {
   width: 30%;
   text-align: center;
   line-height: 32px;
 }
-
-.article_title {
+.article .article_title {
   width: 70%;
   line-height: 32px;
 }
+
 .newsBox a {
   display: block;
   text-align: center;
@@ -178,311 +122,7 @@ img {
 .newsBox a:hover {
   background-color: rgba(136, 166, 73, 0.5);
 }
+
 .fa-chevron-right {
   padding-right: 1vw;
-}
-
-/* ここまでメイン部分　*/
-
-/* フッター部分 */
-
-.footer {
-  width: 100%;
-  display: flex;
-}
-.footer_box {
-  width: 50%;
-}
-.snsBox {
-  background: -moz-radial-gradient(
-    #fff,
-    rgba(184, 217, 115, 0.1) 40%,
-    rgba(136, 166, 73, 0.1)
-  );
-  background: -webkit-radial-gradient(
-    #fff,
-    rgba(184, 217, 115, 0.1) 40%,
-    rgba(136, 166, 73, 0.1)
-  );
-  background: radial-gradient(
-    #fff,
-    rgba(184, 217, 115, 0.1) 40%,
-    rgba(136, 166, 73, 0.1)
-  );
-}
-.reserveBox {
-  background: -moz-radial-gradient(
-    #fff,
-    rgba(255, 199, 120, 0.1) 40%,
-    rgba(255, 90, 96, 0.1)
-  );
-  background: -webkit-radial-gradient(
-    #fff,
-    rgba(255, 199, 120, 0.1) 40%,
-    rgba(255, 90, 96, 0.1)
-  );
-  background: radial-gradient(
-    #fff,
-    rgba(255, 199, 120, 0.1) 40%,
-    rgba(255, 90, 96, 0.1)
-  );
-}
-.icon-link {
-  display: flex;
-  width: 33.3%;
-  margin: 0 auto;
-  padding: 16px 0;
-  justify-content: center;
-  align-items: center;
-  cursor: not-allowed;
-}
-.snsLink-list {
-  width: 50%;
-  margin: 16px auto;
-  display: flex;
-}
-
-.box_text {
-  padding: 8px;
-  text-align: center;
-}
-
-.fa-brands {
-  color: #594a3c;
-}
-.fa-twitter:hover {
-  color: #00aced;
-}
-.fa-instagram:hover {
-  color: #3f729b;
-}
-.fa-facebook-f:hover {
-  color: #3b5998;
-}
-.fa-airbnb:hover {
-  color: rgba(255, 90, 96, 1);
-}
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-
-.footerLogo {
-  display: block;
-  width: 100%;
-  text-align: center;
-  line-height: 80px;
-}
-.footerLogo a {
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  color: #f2f2f2;
-  text-shadow: 3px 3px 1px #594a3c;
-}
-.copyright p {
-  text-align: center;
-  padding: 32px 0;
-  font-size: 8px;
-}
-/* ここまでフッター部分 */
-@media screen and (max-width: 1440px) {
-  body {
-    font-size: 22px;
-  }
-  .pcMenu {
-    width: 40%;
-    position: absolute;
-    top: 0%;
-    right: 3%;
-    text-align: center;
-    line-height: 80px;
-    color: #f2f2f2;
-    text-shadow: 1px 1px 1px #f2f2f2;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  body {
-    font-size: 20px;
-  }
-
-  .firstView {
-    position: relative;
-  }
-  .site-title {
-    font-size: 56px;
-  }
-  .mini-firstView .site-title {
-    font-size: 48px;
-  }
-
-  .headerBox {
-    height: 60px;
-    display: flex;
-    background-color: rgba(136, 166, 73, 0.5);
-  }
-  .headerLogo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    line-height: 60px;
-  }
-  .headerLogo a {
-    font-family: "Dancing Script", cursive;
-    font-size: 36px;
-    color: #f2f2f2;
-    text-shadow: 3px 3px 1px #594a3c;
-  }
-
-  /*　横並びのメニューリストを非表示にし、ハンバーガーメニューを表示する。　*/
-
-  .pcMenu {
-    display: none;
-  }
-
-  /*==ここからハンバーガーメニュー==*/
-
-  #g-nav {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    /*ナビのスタート位置と形状*/
-    top: -120%;
-    left: 0;
-    width: 100%;
-    height: 100vh; /*ナビの高さ*/
-    background: rgba(242, 242, 242, 0.9);
-    /*動き*/
-    transition: all 0.6s;
-  }
-
-  /*アクティブクラスがついたら位置を0に*/
-  #g-nav.panelactive {
-    top: 0;
-  }
-
-  /*ナビゲーション*/
-  #g-nav ul {
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  /*リストのレイアウト設定*/
-
-  #g-nav li {
-    list-style: none;
-    text-align: center;
-  }
-
-  #g-nav li a {
-    color: #594a3c;
-    text-decoration: none;
-    padding: 15px 10px;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-weight: bold;
-  }
-
-  /*========= ボタンのためのCSS ===============*/
-  .openbtn {
-    display: flex;
-    position: fixed;
-    z-index: 9999;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(136, 166, 73, 0.3);
-  }
-  .hambtn {
-    position: absolute;
-    top: 5px;
-    right: 3vw;
-  }
-  .hambtn:hover {
-    background-color: rgba(136, 166, 73, 0.8);
-  }
-
-  /*×に変化*/
-  .openbtn span {
-    display: inline-block;
-    transition: all 0.4s;
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    /* border-radius: 2px; */
-    background-color: #f2f2f2;
-    width: 45%;
-  }
-
-  .openbtn span:nth-of-type(1) {
-    top: 15px;
-  }
-
-  .openbtn span:nth-of-type(2) {
-    top: 23px;
-  }
-
-  .openbtn span:nth-of-type(3) {
-    top: 31px;
-  }
-  .openbtn.active {
-    cursor: pointer;
-    background-color: rgba(140, 126, 114, 0.5);
-  }
-  .openbtn.active:hover {
-    background-color: rgba(140, 126, 114, 1);
-  }
-  .openbtn.active span {
-    z-index: 9999;
-    background-color: #594a3c;
-  }
-  .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-  }
-
-  .openbtn.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-
-  .openbtn.active span:nth-of-type(3) {
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
-  }
-  /*==ここまでハンバーガーメニュー==*/
-
-  .footer {
-    display: block;
-    width: 100%;
-  }
-  .snsBox,
-  .reserveBox {
-    width: 100%;
-  }
-}
-
-/* 幅768pxの画面時 */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-  .site-title {
-    font-size: 42px;
-  }
-  .mini-firstView .site-title {
-    font-size: 36px;
-  }
-}
-@media screen and (max-width: 426px) {
-  body {
-    font-size: 16px;
-  }
 }

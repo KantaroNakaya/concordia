@@ -1,16 +1,26 @@
 @use "var";
-.footer {
+.footer_top {
     width: 100%;
     display: flex;
     @include var.breakPoint("pc_small") {
         display: block;
         width: 100%;
     }
-    &_box {
-        width: 50%;
-    }
+}
+.footer_box {
+    width: 50%;
+    padding: 64px 0;
+    border-bottom: 1px solid #e6e6e6;
 }
 
+.footer_box_title {
+    font-family: "Cinzel", serif;
+    font-size: 32px;
+    color: #594a3c;
+    text-shadow: 1px 1px 1px #594a3c;
+    text-align: center;
+    padding: 24px 0;
+}
 
 .snsBox {
     background: -moz-radial-gradient(
@@ -70,7 +80,7 @@
     display: flex;
 }
 
-.box_text {
+.footer_box_text {
     padding: 8px;
     text-align: center;
 }
@@ -95,6 +105,10 @@
     color: rgba(255, 90, 96, 1);
 }
 
+.footer_bottom {
+    padding: 64px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
 .footerLogo {
     display: block;
     width: 100%;
@@ -106,7 +120,6 @@
         color: #f2f2f2;
         text-shadow: 3px 3px 1px #594a3c;
     }
-    
 }
 
 .copyright p {

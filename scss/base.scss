@@ -76,22 +76,23 @@ img {
     margin: 32px auto;
 }
 .article {
+    display: flex;
     width: 100%;
     max-width: 840px;
     margin: 0 auto;
-    display: flex;
+    padding: 2px 0;
     border-bottom: 1px solid #8c7e72;
     &:first-child {
         border-top: 1px solid #8c7e72;
     }
-    .article_date {
+    &_date {
         width: 30%;
         text-align: center;
-        line-height: 32px;
+        line-height: 1.4;
     }
-    .article_title {
+    &_title {
         width: 70%;
-        line-height: 32px;
+        line-height: 1.4;
     }
 }
 .newsBox a {

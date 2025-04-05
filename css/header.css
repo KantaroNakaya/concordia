@@ -22,11 +22,6 @@
   background-position: center top;
   position: relative;
 }
-@media screen and (max-width: 1080px) {
-  .mini-firstView .site-title {
-    font-size: 48px;
-  }
-}
 
 .site-title {
   position: absolute;
@@ -86,35 +81,42 @@
 
 .pcMenu {
   width: 30%;
+  min-width: 480px;
+  height: 100%;
   position: absolute;
   top: 0%;
   right: 3%;
   text-align: center;
-  line-height: 80px;
   color: #f2f2f2;
   text-shadow: 1px 1px 1px #f2f2f2;
   font-size: 18px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .pcMenu {
     display: none;
   }
 }
 .pcMenu ul {
   display: flex;
+  height: 100%;
 }
 .pcMenu ul li {
-  width: 25%;
-  line-height: 80px;
+  height: 100%;
   color: #f2f2f2;
   text-shadow: 3px 3px 1px #594a3c;
   font-size: 20px;
+}
+.pcMenu ul li a {
+  display: inline-block;
+  height: 100%;
+  padding: 0 1em;
+  align-content: center;
 }
 
 .openbtn {
   display: none;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .openbtn {
     display: flex;
     position: fixed;

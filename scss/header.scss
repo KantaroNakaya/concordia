@@ -22,12 +22,6 @@
     background-image: url(../img/first-view-pc.jpg);
     background-position: center top;
     position: relative;
-
-    @include var.breakPoint("pc_small") {
-        .site-title {
-            font-size: 48px;
-        }
-    }
 }
 
 .site-title {
@@ -47,7 +41,6 @@
     @include var.breakPoint("tablet") {
         font-size: 42px;
     }
-    
 }
 
 .headerBox {
@@ -86,28 +79,35 @@
 
 .pcMenu {
     width: 30%;
+    min-width: 480px;
+    height: 100%;
     position: absolute;
     top: 0%;
     right: 3%;
     text-align: center;
-    line-height: 80px;
     color: #f2f2f2;
     text-shadow: 1px 1px 1px #f2f2f2;
     font-size: 18px;
 
-    @include var.breakPoint("pc_small") {
+    @include var.breakPoint("tablet") {
         display: none;
     }
 
     ul {
         display: flex;
+        height: 100%;
 
         li {
-            width: 25%;
-            line-height: 80px;
+            height: 100%;
             color: #f2f2f2;
             text-shadow: 3px 3px 1px #594a3c;
             font-size: 20px;
+            a{
+                display: inline-block;
+                height: 100%;
+                padding: 0 1em;
+                align-content: center;
+            }
         }
     }
 }
@@ -115,7 +115,7 @@
 .openbtn {
     display: none;
 
-    @include var.breakPoint("pc_small") {
+    @include var.breakPoint("tablet") {
         display: flex;
         position: fixed;
         z-index: 9999;

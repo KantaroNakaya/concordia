@@ -11,19 +11,7 @@ body{
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
-    font-size: 22px;
-    
-    @include var.breakPoint("pc_small") {
-        font-size: 20px;
-    }
-    
-    @include var.breakPoint("tablet") {
-        font-size: 18px;
-    }
-    
-    @include var.breakPoint("sp") {
-        font-size: 16px;
-    }
+    font-size: clamp(16px, 1.6vw, 24px);
 }
 
 img {

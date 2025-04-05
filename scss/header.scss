@@ -30,16 +30,11 @@
     left: 50%;
     transform: translate(-45%, -40%);
     font-family: "Libre Baskerville", serif;
-    font-size: 64px;
+    font-size: clamp(64px, 6.4vw, 80px);
     color: #f2f2f2;
     text-shadow: 5px 5px 1px #594a3c;
-
-    @include var.breakPoint("pc_small") {
-        font-size: 56px;
-    }
-
     @include var.breakPoint("tablet") {
-        font-size: 42px;
+        font-size: max(40px, 8vw);
     }
 }
 
@@ -102,7 +97,7 @@
             color: #f2f2f2;
             text-shadow: 3px 3px 1px #594a3c;
             font-size: 20px;
-            a{
+            a {
                 display: inline-block;
                 height: 100%;
                 padding: 0 1em;

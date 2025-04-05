@@ -70,6 +70,19 @@ img {
 .newsBox {
     display: block;
     width: 100vw;
+    a {
+        display: block;
+        text-align: center;
+        width: 33vw;
+        max-width: 360px;
+        min-width: 180px;
+        padding: 2% 0;
+        margin: 0 auto;
+        background-color: rgba(136, 166, 73, 0.1);
+        &:hover {
+            background-color: rgba(136, 166, 73, 0.5);
+        }
+    }
 }
 .articleBox {
     width: 80%;
@@ -93,19 +106,6 @@ img {
     &_title {
         width: 70%;
         line-height: 1.4;
-    }
-}
-.newsBox a {
-    display: block;
-    text-align: center;
-    width: 33vw;
-    max-width: 360px;
-    min-width: 180px;
-    padding: 2% 0;
-    margin: 0 auto;
-    background-color: rgba(136, 166, 73, 0.1);
-    &:hover {
-        background-color: rgba(136, 166, 73, 0.5);
     }
 }
 .fa-chevron-right {
